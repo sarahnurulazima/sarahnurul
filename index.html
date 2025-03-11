@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            transition: background-color 0.3s, color 0.3s;
         }
         header {
             background-color: #600000;
@@ -20,11 +21,6 @@
             text-align: center;
             font-size: 24px;
             font-weight: bold;
-        }
-        nav {
-            position: relative;
-            top: 20px;
-            right: 20px;
         }
         nav a {
             margin: 0 10px;
@@ -42,32 +38,49 @@
             background-color: #600000;
             color: ivory;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
+            position: relative;
             width: 100%;
         }
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        #toggle-mode {
+            background-color: #600000;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
     </style>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <h1>Perpustakaan Sarah Nurul Azima</h1>
         <nav>
             <a href="index.html">Homepage</a>
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
     
     <main>
-        <p>Selamat datang di Perpustakaan Sarah Nurul Azima!</p>
+        <h2 id="greeting"></h2>
         <h2>About me</h2>
         <p>Halo! Saya Sarah Nurul Azima, mahasiswa Perpustakaan dan Sains Informasi. Saya dengan bangga menyediakan berbagai sumber bacaan e-book, e-journal, dan tugas-tugas 
             dari perkuliahan Pengembangan Web Perpustakaan. Semoga website ini dapat membantu 
-            dalam menambah wawasan Anda.</p>
-        <p><a href="https://library.usu.ac.id" target="_blank" style="color: black; text-decoration: underline;">Kerjasama : Perpustakaan Universitas Sumatera Utara</a></p>
+            dalam menambah wawasan Anda</p>
+        <p><a href="https://library.usu.ac.id" style="color: black; text-decoration: underline;">Kerjasama : Perpustakaan Universitas Sumatera Utara</a></p>
+        <button id="toggle-mode">Mode Gelap</button>
     </main>
+    
     <footer>
         &copy; 2025 Perpustakaan Sarah Nurul Azima
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
