@@ -1,0 +1,43 @@
+/* Styling tambahan untuk website */
+
+/* Efek bayangan di header */
+header {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tambahkan border dan padding di main */
+main {
+    border: 2px solid #600000;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect pada link */
+nav a {
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Animasi tombol mode gelap */
+#toggle-mode {
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+}
+
+#toggle-mode:hover {
+    background-color: #800000;
+    transform: scale(1.1);
+}
+
+/* Efek pada footer */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 14px;
+}
