@@ -81,11 +81,10 @@
             width: 100%;
             height: 350px;
             object-fit: cover;
-            border-top-left-radius: 0.375rem;
+             border-top-left-radius: 0.375rem;
             border-top-right-radius: 0.375rem;
         }
 
-        /* Modern Marquee */
         .marquee-container {
             overflow: hidden;
             white-space: nowrap;
@@ -105,127 +104,198 @@
         }
 
         @keyframes scroll-left {
-            0% {
-                transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Perpustakaan Sarah Nurul Azima</h1>
-        <nav>
-            <a href="index.html" title="Halaman utama">Homepage</a>
-            <a href="about.html" title="Informasi tentang diri saya">About</a>
-            <a href="contact.html" title="Kirimkan pesan mengenai kritik dan saran disini">Contact</a>
-            <a href="tabel_perkalian.php" title="Tabel perkalian10x10">Rekreasi</a>
-            <a href="formulir_pengunjung.php" title="Isi data dirimu disini">Formulir Pengunjung</a>
-        </nav>
-    </header>
+<header>
+    <h1>Perpustakaan Sarah Nurul Azima</h1>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tabel_perkalian.php">Rekreasi</a>
+        <a href="formulir_pengunjung.php">Formulir Pengunjung</a>
+    </nav>
+</header>
 
-    <!-- Marquee Modern -->
-    <div class="marquee-container">
-        <div class="marquee-text">
-            Selamat datang di Perpustakaan Sarah Nurul Azima! Temukan berbagai sumber bacaan menarik di sini.
-        </div>
+<div class="marquee-container">
+    <div class="marquee-text">
+        Selamat datang di Perpustakaan Sarah Nurul Azima! Temukan berbagai sumber bacaan menarik di sini.
     </div>
-    
-    <main>
-        <h2 id="greeting"></h2>
-        <h2>About Me</h2>
-        <p>
-            Halo! Saya Sarah Nurul Azima, mahasiswa Perpustakaan dan Sains Informasi. 
-            Saya dengan bangga menyediakan berbagai sumber bacaan e-book, e-journal, 
-            dan tugas-tugas dari perkuliahan Pengembangan Web Perpustakaan. 
-            Semoga website ini dapat membantu dalam menambah wawasan Anda.
-        </p>
-        <p>
-            <a href="https://library.usu.ac.id" target="_blank" style="color: black; text-decoration: underline;">
-                Kerjasama: Perpustakaan Universitas Sumatera Utara
-            </a>
-        </p>
-        <button id="toggle-mode">Mode Gelap</button>
-    </main>
+</div>
+
+<main>
+    <h2 id="greeting"></h2>
+
+    <form id="name-form">
+        <label for="name">Masukkan nama Anda:</label><br>
+        <input type="text" id="name" required>
+        <button type="submit">Simpan</button>
+    </form>
+
+    <h2>About Me</h2>
+    <p>
+        Halo! Saya Sarah Nurul Azima, mahasiswa Perpustakaan dan Sains Informasi. 
+        Saya dengan bangga menyediakan berbagai sumber bacaan e-book, e-journal, 
+        dan tugas-tugas dari perkuliahan Pengembangan Web Perpustakaan. 
+        Semoga website ini dapat membantu dalam menambah wawasan Anda.
+    </p>
+    <p>
+        <a href="https://library.usu.ac.id" style="color: black; text-decoration: underline;">
+            Kerjasama: Perpustakaan Universitas Sumatera Utara
+        </a>
+    </p>
+    <button id="toggle-mode">Mode Gelap</button>
+</main>
+
     <!-- Event Section -->
+    <section class="container my-5">
+        <h2 class="mb-4">Event</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <a href="https://kansa2.sch.id/wp-content/uploads/1.png" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://kansa2.sch.id/wp-content/uploads/1.png" class="card-img-top event-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Lomba Desain Poster dengan Tema Gemar Membaca di Perpustakaan "SEMERU"</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="http://eventpenulis.com/wp-content/uploads/2024/05/Poster-FCCN2024-819x1024.jpg" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card shadow-sm h-100">
+                        <img src="http://eventpenulis.com/wp-content/uploads/2024/05/Poster-FCCN2024-819x1024.jpg" class="card-img-top event-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Festival Cipta Cerpen Nasional</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="https://jadwalevent.web.id/wp-content/uploads/2022/10/4407-festival-literasi-karanganyar-2022.jpeg" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://jadwalevent.web.id/wp-content/uploads/2022/10/4407-festival-literasi-karanganyar-2022.jpeg" class="card-img-top event-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Festival Cipta Cerpen Nasional</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    </section>
+
 <section class="container my-5">
     <h2 class="mb-4">Event</h2>
     <div class="row justify-content-center">
-        <div class="col-md-4 mb-4">
-            <a href="https://kansa2.sch.id/wp-content/uploads/1.png" target="_blank" class="text-decoration-none text-dark">
-                <div class="card shadow-sm h-100">
-                    <img src="https://kansa2.sch.id/wp-content/uploads/1.png" class="card-img-top event-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Lomba Desain Poster dengan Tema Gemar Membaca di Perpustakaan "SEMERU"</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 mb-4">
-            <a href="http://eventpenulis.com/wp-content/uploads/2024/05/Poster-FCCN2024-819x1024.jpg" target="_blank" class="text-decoration-none text-dark">
-                <div class="card shadow-sm h-100">
-                    <img src="http://eventpenulis.com/wp-content/uploads/2024/05/Poster-FCCN2024-819x1024.jpg" class="card-img-top event-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Festival Cipta Cerpen Nasional</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 mb-4">
-            <a href="https://jadwalevent.web.id/wp-content/uploads/2022/10/4407-festival-literasi-karanganyar-2022.jpeg" target="_blank" class="text-decoration-none text-dark">
-                <div class="card shadow-sm h-100">
-                    <img src="https://jadwalevent.web.id/wp-content/uploads/2022/10/4407-festival-literasi-karanganyar-2022.jpeg" class="card-img-top event-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Festival Cipta Cerpen Nasional</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <!-- Event Cards -->
+    </div>
 </section>
-    <footer>
-        &copy; 2025 Perpustakaan Sarah Nurul Azima. All rights reserved.
-    </footer>
 
-    <!-- Script Bootstrap (CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+    &copy; 2025 Perpustakaan Sarah Nurul Azima. All rights reserved.
+</footer>
 
-    <!-- Script Dark Mode -->
-    <script>
-        document.getElementById('toggle-mode').addEventListener('click', function () {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('toggle-mode').addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
 
-    <!-- Script Instagram -->
-    <script async src="//www.instagram.com/embed.js"></script>
-    <!-- Cookie Notice -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+<!-- Cookie Notice -->
 <div id="cookie-notice" style="
-position: fixed;
-bottom: 0;
-left: 0;
-right: 0;
-background: #600000;
-color: ivory;
-padding: 15px;
-text-align: center;
-z-index: 1000;
-display: none;
-font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #600000;
+    color: ivory;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    font-size: 16px;
 ">
-Website ini menggunakan cookies untuk meningkatkan pengalaman Anda.
-<button id="terima-cookie" style="
-    margin-left: 15px;
-    padding: 8px 16px;
-    background-color: ivory;
-    color: #600000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-">Setuju</button>
+    Website ini menggunakan cookies untuk meningkatkan pengalaman Anda.
+    <button id="terima-cookie" style="
+        margin-left: 15px;
+        padding: 8px 16px;
+        background-color: ivory;
+        color: #600000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    ">Setuju</button>
 </div>
-    
+
+<script>
+    function setCookie(nama, nilai, hari) {
+        const d = new Date();
+        d.setTime(d.getTime() + (hari * 24 * 60 * 60 * 1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = nama + "=" + nilai + ";" + expires + ";path=/";
+    }
+
+    function getCookie(nama) {
+        let name = nama + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i].trim();
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function tampilkanSalam(nama) {
+        document.getElementById("greeting").innerText = "Halo, " + nama + "!";
+        const nameForm = document.getElementById("name-form");
+        if (nameForm) nameForm.style.display = "none";
+    }
+
+    function cekPersetujuanCookie() {
+        let disetujui = getCookie("cookie_disetujui");
+        if (disetujui !== "ya") {
+            document.getElementById("cookie-notice").style.display = "block";
+        }
+    }
+
+    window.onload = function () {
+        let nama = getCookie("pengunjung");
+        if (nama !== "") {
+            tampilkanSalam(nama);
+        }
+        cekPersetujuanCookie();
+
+        const tombol = document.getElementById("terima-cookie");
+        if (tombol) {
+            tombol.addEventListener("click", function () {
+                setCookie("cookie_disetujui", "ya", 365);
+                document.getElementById("cookie-notice").style.display = "none";
+            });
+        }
+
+        const nameForm = document.getElementById("name-form");
+        if (nameForm) {
+            nameForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const namaInput = document.getElementById("name").value;
+                if (namaInput.trim() !== "") {
+                    setCookie("pengunjung", namaInput, 365);
+                    tampilkanSalam(namaInput);
+                }
+            });
+        }
+    };
+</script>
+
 </body>
 </html>
